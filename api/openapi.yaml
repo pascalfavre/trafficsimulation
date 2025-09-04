@@ -1,0 +1,37 @@
+openapi: 3.0.3
+info:
+  title: Public Establishments Data API
+  version: "1.0.0"
+servers:
+  - url: https://<username>.github.io/<repo>/api
+paths:
+  /base.json:
+    get:
+      summary: Simulation du trafic avec l'ensemble du réseau routier accessible
+      responses:
+        '200':
+          description: JSON avec résultats de la simulation de base
+          content:
+            application/json:
+              schema:
+                type: object
+  /industrie.json:
+    get:
+      summary: Fermeture des segments situés entre la gare de Sion et la Coop sous-gare.
+      responses:
+        '200':
+          description: JSON avec résultats de la simulation de la fermeture d'une partie de la route de l'Industrie
+          content:
+            application/json:
+              schema:
+                type: object
+  /blancherie.json:
+    get:
+      summary:  Fermeture des segments situés en bordure de la piscine de Sion.
+      responses:
+        '200':
+          description: JSON avec résultats de la simulation de la fermeture d'une partie du quartier de la Blancherie à Sion.
+          content:
+            application/json:
+              schema:
+                type: object
