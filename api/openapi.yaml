@@ -1,9 +1,9 @@
 openapi: 3.0.3
 info:
-  title: Public Establishments Data API
+  title: Data API - Simulation du trafic routier dans le quartier de Ronquoz
   version: "1.0.0"
 servers:
-  - url: https://<username>.github.io/<repo>/api
+  - url: https://pascalfavre.github.io/traficsimulation/api
 paths:
   /base.json:
     get:
