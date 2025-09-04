@@ -14,7 +14,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
+                $ref: 'schema'
   /industrie.json:
     get:
       summary: Fermeture des segments situés entre la gare de Sion et la Coop sous-gare.
@@ -24,7 +24,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
+                $ref: 'schema'
   /blancherie.json:
     get:
       summary:  Fermeture des segments situés en bordure de la piscine de Sion.
@@ -34,4 +34,4 @@ paths:
           content:
             application/json:
               schema:
-                type: object
+                $ref: 'schema'
