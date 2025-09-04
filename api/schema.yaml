@@ -5,13 +5,15 @@ components:
       properties:
         segment_id:
           type: integer
-          description: Identifiant du segment dans la couche TLM3D
+          description: Identifiant unique du segment dans la couche TLM3D
         closed:
           type: boolean
-          description: Status du segment (true = fermé; false = ouvert)
+          description: Statut du segment (true = fermé; false = ouvert)
         avg_load:
-          type: float
-          description: Charge moyenne de trafic sur le segment ^
+          type: number
+          format: float
+          description: Charge moyenne de trafic sur le segment
         load_impact:
-          type: float
-          description: Impact de la fermeture des segments par rapport au scénario de base (Variation en %).
+          type: number
+          format: float
+          description: Impact de la fermeture des segments par rapport au scénario de base (variation en %)
