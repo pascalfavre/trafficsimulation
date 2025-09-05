@@ -1,6 +1,6 @@
 type: object
 properties:
-  segment_id:
+  object_id:
     type: integer
     description: Identifiant unique du segment dans la couche TLM3D
   closed:
