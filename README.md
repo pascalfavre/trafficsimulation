@@ -13,4 +13,4 @@ de trafic dans le quartier de Ronquoz, à Sion. Ces données sont le résultat d
 # Exemples de visualisations
 
 ![Industrie](fermeture_industrie.png)  
-![Blancherie](fermetre_blancherie.png)
+![Blancherie](fermeture_blancherie.png)
