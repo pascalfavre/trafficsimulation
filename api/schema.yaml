@@ -13,4 +13,4 @@ properties:
   load_impact:
     type: number
     format: float
-    description: Impact de la fermeture des segments par rapport au scénario de base (variation en %)
+    description: Impact de la fermeture des segments par rapport au scénario de base (variation en %). Calcul réalisé = avg_load de la couche sélectionnée / avg_load de la couche de base -1

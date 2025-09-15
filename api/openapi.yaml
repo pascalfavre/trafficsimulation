@@ -5,32 +5,32 @@ info:
 servers:
   - url: https://pascalfavre.github.io/trafficsimulation/api
 paths:
-  /base.json:
+  /base.geojson:
     get:
       summary: Simulation du trafic avec l'ensemble du réseau routier accessible
       responses:
         '200':
-          description: JSON avec résultats de la simulation de base
+          description: Geojson avec résultats de la simulation de base
           content:
             application/json:
               schema:
                 $ref: './schema.yaml'
-  /industrie.json:
+  /industrie.geojson:
     get:
       summary: Fermeture des segments situés entre la gare de Sion et la Coop sous-gare.
       responses:
         '200':
-          description: JSON avec résultats de la simulation de la fermeture d'une partie de la route de l'Industrie
+          description: Geojson avec résultats de la simulation de la fermeture d'une partie de la route de l'Industrie
           content:
             application/json:
               schema:
                 $ref: './schema.yaml'
-  /blancherie.json:
+  /blancherie.geojson:
     get:
       summary:  Fermeture des segments situés en bordure de la piscine de Sion.
       responses:
         '200':
-          description: JSON avec résultats de la simulation de la fermeture d'une partie du quartier de la Blancherie à Sion.
+          description: Geojson avec résultats de la simulation de la fermeture d'une partie du quartier de la Blancherie à Sion.
           content:
             application/json:
               schema:
